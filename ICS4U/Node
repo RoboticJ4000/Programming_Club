@@ -1,0 +1,46 @@
+public class Node {
+
+	private String name;
+	private int key;
+	
+	public Node left;
+	public Node right;
+	
+	
+public Node(){
+	this.name = "Nameless";
+	this.key = 0;
+	
+	this.left = this.right = null;
+	
+}
+
+public Node(String name, int k){
+	this.name = name;
+	this.key = k;
+	
+	this.left = this.right = null;
+}
+
+public Node(String name, int k, Node l, Node r){
+	this.name = name;
+	this.key = k;
+	
+	this.left = l;
+	this.right = r;
+}
+
+
+
+
+public String toString(){
+	return name + ". Key: " + key;
+}
+
+
+public void newKey(int k){
+	this.key = k;
+}
+
+
+}
